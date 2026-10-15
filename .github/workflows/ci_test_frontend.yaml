@@ -75,5 +75,5 @@ jobs:
 
   deploy:
         needs: [frontend_deploy,backend_deploy]
-        uses: ./.github/workflows/cd.yml
+        uses: ./.github/workflows/cd_deployment.yaml
         secrets: inherit                
