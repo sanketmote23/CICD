@@ -16,10 +16,12 @@ jobs:
             - name: Copy Example Env to main env
              # run: cp .env.example .env
               run: |
+                echo "Current directory:"
                 pwd
+                echo "Files in current directory:"
                 ls -la
-                cp .env.example .env
-
+                echo "Searching for env example:"
+                find . -name '*env*' -type f
 
             - name: Docker Setup [Login]
               uses: docker/login-action@v4
