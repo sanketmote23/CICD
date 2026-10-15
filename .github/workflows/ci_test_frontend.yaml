@@ -34,7 +34,7 @@ jobs:
           push: true
           tags: ${{ vars.DOCKERHUB_USERNAME }}/devboard-frontend:v1
 
-  backend:
+  backend_deploy:
         # Github runner
         runs-on: ubuntu-latest
         steps:
